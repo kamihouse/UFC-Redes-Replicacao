@@ -11,7 +11,7 @@
 #			Matheus Souza de Carvalho
 #			Thiago Pereira Rosa
 #
-# GitHub:	
+# GitHub:	https://github.com/kamihouse/UFC-Redes-Replicacao
 ###############################################################################
 
 Sistema de Postagens de Notícias em Python com Replicação, Consistência e 
@@ -40,7 +40,10 @@ Balanceamento de Carga com armazenamento em Arquivos de texto.
 			 python server3.py
 
 3 - Como executar os Clientes:
-	a) Executar o cliente em qualquer máquina com os seguintes comandos:
+	a) (Linha de Comando) Executar o cliente em qualquer máquina com os seguintes comandos:
 		a.a) python client.py
 		a.b) Efetuar postagens com os campos TÍTULO e MENSAGEM.
 			a.b.a) Para encerrar CTRL + C
+	b) (Interface Gráfica) Executar o cliente em qualquer máquina com os seguintes comandos:
+		a.a) python clientApp.py
+		a.b) Efetuar postagens com os campos TÍTULO e MENSAGEM.
