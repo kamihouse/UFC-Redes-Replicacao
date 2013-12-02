@@ -3,7 +3,7 @@ from random import choice
 
 idCliente = str(choice(xrange(1, 30000)))
 idPost = 1
-serverIp = '192.168.254.12'
+serverIp = '10.0.37.154'
 servers = [(serverIp, 5001),(serverIp, 5002),(serverIp, 5003)]
 tcp = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 tcp.connect(choice(servers))

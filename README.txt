@@ -7,9 +7,9 @@
 # Prof:		Flávio R. C. Sousa
 #
 # Alunos:	Jefferson Silva
-#			João Marcos Epifanio
-#			Matheus Souza de Carvalho
-#			Thiago Pereira Rosa
+#		João Marcos Epifanio
+#		Matheus Souza de Carvalho
+#		Thiago Pereira Rosa
 #
 # GitHub:	https://github.com/kamihouse/UFC-Redes-Replicacao
 ###############################################################################
@@ -22,7 +22,7 @@ Balanceamento de Carga com armazenamento em Arquivos de texto.
 		a.a) sockets
 		a.b) os
 		a.c) sys
-		a.d) replicacao (nossa biblioteca de replicação)
+		a.d) replicação (nossa biblioteca de replicação)
 		a.e) random
 	b) S.O. Linux e/ou Unix.
 	c) Estar conectado em uma Rede de Computadores.
