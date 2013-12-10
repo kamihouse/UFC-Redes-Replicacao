@@ -5,12 +5,11 @@
 import socket
 import os
 import sys
-import replicacao
-import toolip
+from replicacao import *
+
 
 db = 'dbServer1.txt'
-serverIp = toolip.getIp()
-servers = [(serverIp, 5001),(serverIp, 5002),(serverIp, 5003)]
+serverIp = ('10.0.37.154', 5001)
 
 # apenas para zerar a base de dados
 def zeraDb():
@@ -25,11 +24,12 @@ def salvaPostDb(post):
     print '-- S1 - Post salvo.'
 
 zeraDb()
+preencheBaseZerada(1)
 
 if __name__ == '__main__':
     tcp = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     # Escolher o Servidor
-    tcp.bind(servers[0])
+    tcp.bind(serverIp)
     tcp.listen(1)
     con = None
     print 'Servidor iniciado!'
@@ -49,9 +49,7 @@ if __name__ == '__main__':
             
                     print cliente, post
                     salvaPostDb(post)
-
-                    # Efetuando Replicacao
-                    replicacao.replica(1)
+                    replica(1)
         
                 print 'Finalizando conexao do cliente', cliente
                 con.close()

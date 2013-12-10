@@ -1,4 +1,4 @@
-dbs = ['dbServer1.txt', 'dbServer2.txt', 'dbServer3.txt']
+dbs = ['dbServer1.txt', 'dbServer2.txt']
 
 def replica(servidor):
     serverParaLista = int(servidor) - 1
@@ -11,3 +11,16 @@ def replica(servidor):
             dbAux = open(db, 'a')
             dbAux.write(last_line)
             dbAux.close()
+
+def preencheBaseZerada(servidor):
+	serverParaLista = int(servidor) - 1
+	dbQueChamou = open(dbs[serverParaLista], 'a')
+	for db in dbs:
+		if db <> dbs[serverParaLista]:
+			dbQueTemDados = open(db, 'r')
+			for linha in dbQueTemDados.readlines():
+				dbQueChamou.write(linha)
+
+			dbQueTemDados.close()
+
+	dbQueChamou.close()

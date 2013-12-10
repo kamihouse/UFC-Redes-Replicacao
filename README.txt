@@ -1,4 +1,4 @@
-##############################################################################
+###############################################################################
 # Universidade Federal do Ceará.
 # Redes de Computadores & Sistemas Distribuídos.
 #
@@ -28,16 +28,12 @@ Balanceamento de Carga com armazenamento em Arquivos de texto.
 	c) Estar conectado em uma Rede de Computadores.
 
 2 - Recomendações:
-	a) Alterar as configurações de IP de acordo com a especificação da sua rede.
-		a.a) client.py - Alterar a var servers na Linha 6 (servers = [('192.168.254.12', 5001), ...])
-		a.b) server*.py - Alterar var servers na Linha 11 (servers = [('192.168.254.12', 5001), ...])
+	a) Utilize os Servidores e o Middleware em ambiente Linux de preferência.
 
 2 - Como executar os Servidores:
-	a) Executar os servidores em máquinas separadas, ou em Portas diferentes na mesma máquina.
-		utilizando os seguintes comandos (Logs de conexão serão exibidos):
-		a.a) python server1.py
-			 python server2.py
-			 python server3.py
+	a) utilize o comando abaixo para iniciar o servidor:
+		python server.py
+		(Execute para cada um dos servidores que deseja iniciar)
 
 3 - Como executar os Clientes:
 	a) (Linha de Comando) Executar o cliente em qualquer máquina com os seguintes comandos:
